@@ -12,7 +12,7 @@ export function getImagesByQuery(query) {
     per_page: 40
   };
 
- return axios
+  return axios
     .get(API_BASE, { params })
     .then((res) => res.data);
 
