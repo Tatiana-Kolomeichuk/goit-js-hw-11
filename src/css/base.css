@@ -30,3 +30,157 @@ main {
 main:has(.back-link) {
   text-align: center;
 }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial,
+    sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial,
+    sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.form {
+  max-width: 900px;
+  margin: 0 auto 20px auto;
+  padding: 16px 20px;
+  background-color: #ffffff;
+  border: 1px solid #e3e3e3;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.form label {
+  flex: 1 1 auto;
+}
+
+.input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #cfcfcf;
+  border-radius: 2px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.input::placeholder {
+  color: #aaaaaa;
+}
+
+.input:hover {
+  border-color: #a6a6a6;
+}
+
+.input:focus {
+  border-color: #4d90fe;
+  box-shadow: 0 0 0 1px #4d90fe;
+}
+
+.button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 2px;
+  background-color: #4d90fe;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, box-shadow 0.15s ease,
+    transform 0.05s ease;
+}
+
+.button:hover {
+  background-color: #357ae8;
+}
+
+.button:active {
+  background-color: #2f5bb7;
+  transform: translateY(1px);
+}
+
+.button:disabled {
+  background-color: #a9c0ff;
+  cursor: not-allowed;
+}
+
+.gallery {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px 20px 24px 20px;
+  background-color: #ffffff;
+  border: 1px solid #e3e3e3;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+}
+
+.card {
+  width: 260px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 2px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card a {
+  display: block;
+}
+
+.thumb {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 8px;
+  font-size: 11px;
+  color: #666;
+  background-color: #fafafa;
+}
+
+.stat {
+  white-space: nowrap;
+}
+
+.label {
+  font-weight: 600;
+}
+
+.loader {
+  max-width: 900px;
+  margin: 16px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ball-spin-fade-loader > div {
+  background-color: #4d90fe;
+}
