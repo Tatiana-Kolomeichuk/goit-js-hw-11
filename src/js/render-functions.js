@@ -47,9 +47,9 @@ export function clearGallery() {
   galleryEl.innerHTML = "";
 }
 export function showLoader() {
-  loaderEl.hidden = false;
+  loaderEl.classList.remove('hidden'); 
 }
 
 export function hideLoader() {
-  loaderEl.hidden = true;
+  loaderEl.classList.add('hidden');
 }
