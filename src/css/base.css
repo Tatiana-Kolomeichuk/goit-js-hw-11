@@ -193,13 +193,22 @@ body {
 
 /* Лоадер */
 .loader {
-  max-width: 900px;
-  margin: 16px auto 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: #ff3d00;
+  border-radius: 50%;
+  display: block;
+  margin: 16px auto 0;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
 }
 
-.ball-spin-fade-loader > div {
-  background-color: #4d90fe;
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
